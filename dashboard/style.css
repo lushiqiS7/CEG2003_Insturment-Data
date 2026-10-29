@@ -1,0 +1,32 @@
+@font-face {font-family:Geist;src:local("Geist"),url("data:font/ttf;base64,FONT_DATA") format("truetype");font-weight:100 900;font-display:swap;}
+html,body,[data-testid="stApp"],button,input,select,textarea,p,span,label {font-family:Geist,Arial,sans-serif;}
+[data-testid="stApp"] {background:#fff;color:#202124;font-variant-numeric:tabular-nums;}
+[data-testid="stMainBlockContainer"] {max-width:1280px;padding:1rem 2rem 2rem;}
+[data-testid="stHeader"] {background:transparent;height:0;}
+[data-testid="stToolbar"] {display:none;}
+h1 {font-size:26px!important;line-height:1.2!important;font-weight:500!important;letter-spacing:-.025em;}
+h2,h3 {font-size:17px!important;line-height:1.35!important;font-weight:500!important;}
+p,label {font-size:14px;line-height:1.5;}
+.brand {display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:12px;border-bottom:1px solid #e6e6e6;font-size:15px;}
+.muted {color:#62666b;font-size:12px;}
+.notice {font-size:13px;line-height:1.5;background:#f6f7f8;border:1px solid #e6e8eb;border-radius:6px;padding:10px 12px;}
+[data-testid="stMetricValue"] {font-size:28px!important;font-weight:400!important;}
+[data-testid="stMetricLabel"] p {font-size:13px!important;color:#62666b;}
+[data-testid="stMetric"] {padding:2px 0 4px;}
+[data-testid="stCaptionContainer"] p {font-size:12px!important;color:#62666b!important;}
+[data-testid="stHorizontalBlock"] {gap:16px;}
+[data-testid="stVerticalBlock"] {gap:10px;}
+[data-testid="stBaseButton-primary"] {background:#202124;border-color:#202124;box-shadow:none;}
+[data-testid="stBaseButton-secondary"] {border-color:#d4d6d9;border-radius:6px;box-shadow:none;}
+[data-testid="stExpander"] {border-color:#e6e6e6;border-radius:6px;}
+[data-testid="stDataFrame"] table td,[data-testid="stDataFrame"] table th {text-align:right;font-variant-numeric:tabular-nums;}
+[data-testid="stDataFrame"] table td:first-child,[data-testid="stDataFrame"] table th:first-child {text-align:left;}
+@media(max-width:640px) {
+ [data-testid="stMainBlockContainer"] {padding:1rem 1rem 2rem;}
+ h1 {font-size:23px!important;}
+ .brand .muted {max-width:125px;text-align:right;}
+ [data-testid="stMetricValue"] {font-size:23px!important;}
+ [data-testid="stHorizontalBlock"]:has([data-testid="stMetric"]) {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));}
+ [data-testid="stHorizontalBlock"]:has([data-testid="stMetric"]) > [data-testid="stColumn"] {width:100%!important;min-width:0!important;}
+ [data-testid="stHorizontalBlock"]:has(> [data-testid="stColumn"]:nth-child(3):last-child):has([data-testid="stMetric"]) > :last-child {grid-column:1/-1;}
+}

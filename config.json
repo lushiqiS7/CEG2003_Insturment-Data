@@ -1,0 +1,14 @@
+{
+  "alarm_file": "data/raw/Mar24_part1.xlsx",
+  "accident_file": "data/raw/Traffic Accident Database 2024.xlsx",
+  "feature_start": "2024-03-01",
+  "feature_end": "2024-03-15",
+  "outcome_start": "2024-03-16",
+  "outcome_end": "2024-03-31",
+  "excluded_incident_flags": ["DUPLICATE", "NEAR MISS", "NM", "ALLEGED"],
+  "label_assumption": "Other report flags, including blanks, are provisionally included as recorded incidents; confirmation is pending.",
+  "night_start_hour": 22,
+  "night_end_hour": 6,
+  "review_fraction": 0.10,
+  "random_seed": 42
+}

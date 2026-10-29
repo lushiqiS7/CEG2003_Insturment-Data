@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "Train models", "type": "debugpy", "request": "launch", "module": "src.train", "console": "integratedTerminal", "cwd": "${workspaceFolder}"},
+    {"name": "Dashboard", "type": "debugpy", "request": "launch", "module": "streamlit", "args": ["run", "dashboard/app.py", "--server.address", "127.0.0.1"], "console": "integratedTerminal", "cwd": "${workspaceFolder}"}
+  ]
+}

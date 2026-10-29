@@ -1,0 +1,13 @@
+numpy
+pandas
+pyarrow
+lxml
+openpyxl
+scikit-learn
+joblib
+threadpoolctl
+plotly
+streamlit
+ipykernel
+pytest
+ruff
