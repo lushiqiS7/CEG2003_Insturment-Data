@@ -1,8 +1,20 @@
 # Bus Captain Risk Review
 
+**Version 1.0 — Minimum core functionality met.**
+
 A local Python and Streamlit research project for reviewing bus captains using recorded driving behaviour, fatigue alerts and collision warnings. It prepares the supplied Excel data, trains and evaluates candidate models, and displays a ranked queue with explanations.
 
 **Status:** the software pipeline works, but reliable accident prediction has not been demonstrated. The dashboard shows provisional review suggestions. A high priority score does not establish that a captain is unsafe.
+
+## Versions and release history
+
+`VERSION` is the source of truth for the project version. Version `1.0` marks the minimum core software baseline: data preparation, model training/evaluation, captain ranking, explanations, dashboard and automated tests. It does not certify predictive reliability or completion of the separate assessment submissions.
+
+For each future completed edit or improvement, increment the second number by one: `1.0` → `1.1` → `1.2`, continuing to `1.10` after `1.9`. Treat each number as an integer, not a decimal. Increment once per completed logical update, rather than once per edited file or keystroke. Update `VERSION`, the version line above and this history together; check the change, then tag its commit `v<version>`. Preserve existing tags.
+
+| Version | Milestone |
+|---|---|
+| 1.0 | Minimum core functionality met; baseline checked with 19 passing tests, Ruff and dependency checks. Predictive reliability remains unproven. |
 
 ## Requirements
 
